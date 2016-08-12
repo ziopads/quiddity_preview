@@ -1,6 +1,6 @@
 (function(){
   HomeController.$inject = ['$scope'];
-  BioController.$inject = ['$scope'];
+  OverviewController.$inject = ['$scope'];
   ProcessController.$inject = ['$scope'];
   DesignController.$inject = ['$scope'];
 

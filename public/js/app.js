@@ -4,19 +4,19 @@
   function routes($routeProvider){
     $routeProvider
       .when('/', {
-        templateUrl: 'public/partials/home.html',
+        templateUrl: 'partials/home.html',
         controller: 'HomeController'
       })
       .when('/overview', {
-        templateUrl: 'public/partials/overview.html',
+        templateUrl: 'partials/overview.html',
         controller: 'OverviewController'
       })
       .when('/process', {
-        templateUrl: 'public/partials/process.html',
+        templateUrl: 'partials/process.html',
         controller: 'ProcessController'
       })
       .when('/design', {
-        templateUrl: 'public/partials/design.html',
+        templateUrl: 'partials/design.html',
         controller: 'DesignController'
       })
 
