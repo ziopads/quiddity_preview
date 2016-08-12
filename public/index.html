@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="portfolio">
+<html lang="en" ng-app="preview">
 <head>
   <meta charset="UTF-8">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
@@ -8,14 +8,20 @@
   <script type="text/javascript" src="js/controllers.js"></script>
   <script type="text/javascript" src="js/directives.js"></script>
   <script type="text/javascript" src="js/services.js"></script>
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" charset="utf-8">
+  <link rel="stylesheet" href="css/nav.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Quiddity</title>
 </head>
 <body>
   <nav>
     <a href="/#/home">Home</a>
-    <a href="/#/bio">Bio</a>
-    <a href="/#/projects">Projects</a>
-    <a href="/#/resume">Resume</a>
+    <a href="/#/overview">Overview</a>
+    <a href="/#/design">Design Principles</a>
+    <a href="/#/process">Process</a>
   </nav>
   <div ng-view></div>
 </body>
