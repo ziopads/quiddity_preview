@@ -3,18 +3,106 @@
   margin: 0;
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #bbb;
+}
+
 body {
-  background-color: #222;
+  background-color: #bbb;
   font-family: 'Open Sans', sans-serif;
   color: #bbb;
 }
 
-#homeImage{
+/*#homeImage{
+  position: absolute;
   width: 100%;
   height: auto;
-  overflow: hidden;
+  display: inline;
+  z-index: -1;
+}*/
+
+.right {
+  padding: 30px;
+  display: inline-block;
+  float: right;
+  margin-right: 80px;
+  width: 500px;
+  z-index: 100;
+  background-color: #222;
+  opacity: .8;
+
 }
 
-#right {
-  float: right;
+.text {
+  opacity: 1;
+}
+
+/*html {
+  background: url(http://4.bp.blogspot.com/-aJSTKwrFlZk/TZJXj5E0ZsI/AAAAAAAAA9A/Lo8tleArnVA/s1600/477-701383.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  back
+}*/
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: .3;
+  z-index: -10;
+}
+
+img.bgFlip {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: .3;
+  z-index: -10;
+
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+
+img.left{
+  display: inline-block;
+  float: left;
+  max-width: 40%;
+  height: auto;
+}
+.container {
+  margin-top: 120px;
+  z-index: 100;
+}
+
+.textBlock{
+  display: inline-block;
+  padding-bottom: 30px;
 }

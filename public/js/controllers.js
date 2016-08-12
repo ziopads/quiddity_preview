@@ -16,7 +16,7 @@
     $scope.view = {};
     $scope.view.message = 'This is the Process page.'
   }
-  function ResumeController($scope){
+  function DesignController($scope){
     $scope.view = {};
     $scope.view.message = 'This is the Design page.'
   }
