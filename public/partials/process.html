@@ -8,13 +8,13 @@
       </div>
 
       <div class="textBlock">
-
+        {{view.message}}
       </div>
 
-      <div class="textBlock">
-        <p>
-        Artistic mindset vs. Developer mindset<br>
-        exploratory vs. teleological</p>
+      <div class="textBlock" ng-repeat="repo in view.gitData | orderBy: 'created_at':  true">
+        {{repo.name}}
+        <!-- <a href="{{repo.html_url}}" target="_blank" >{{repo.name}}</a>
+        <small>{{repo.description}}</small> -->
       </div>
     </div>
 

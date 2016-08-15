@@ -1,7 +1,7 @@
 (function(){
   HomeController.$inject = ['$scope'];
   OverviewController.$inject = ['$scope'];
-  ProcessController.$inject = ['$scope'];
+  ProcessController.$inject = ['$scope', '$http'];
   DesignController.$inject = ['$scope'];
 
   function HomeController($scope){
@@ -12,9 +12,20 @@
     $scope.view = {};
     $scope.view.message = 'This is the Overview page.'
   }
-  function ProcessController($scope){
+  function ProcessController($scope, $http){
     $scope.view = {};
     $scope.view.message = 'This is the Process page.'
+    $scope.utils = {
+      gitData: function(){
+        $http.get("https://api.github.com/users/ziopads/repos")
+        .then(function(data) {
+          // return data;
+          console.log(data.data);
+          $scope.view.gitData = data.data;
+        });
+      }
+    }
+    $scope.utils.gitData();
   }
   function DesignController($scope){
     $scope.view = {};
