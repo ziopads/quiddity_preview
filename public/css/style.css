@@ -103,6 +103,8 @@ img.left{
 }
 
 .textBlock{
-  display: inline-block;
+  display: block;
   padding-bottom: 30px;
+  max-width: 440px;
+  min-width: 440px;
 }
