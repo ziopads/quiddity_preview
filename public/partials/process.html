@@ -3,18 +3,17 @@
   <div class="right">
     <div class="text">
       <div class="textBlock">
-        <h1>Process for Development</h1>
-
+        <h1>{{view.textBlock1h1}}</h1>
+        <p>{{view.textBlock1p}}</p>
       </div>
+
 
       <div class="textBlock">
-        {{view.message}}
-      </div>
+        <h3>{{view.textBlock3h3}}</h3>
+        <ul ng-repeat="repo in view.gitData | orderBy: 'created_at':  true">
+          <li><a href="{{repo.html_url}}" target="_blank" >{{repo.name}}</a><br><small>{{repo.description}}</small></li>
+        </ul>
 
-      <div class="textBlock" ng-repeat="repo in view.gitData | orderBy: 'created_at':  true">
-        {{repo.name}}
-        <!-- <a href="{{repo.html_url}}" target="_blank" >{{repo.name}}</a>
-        <small>{{repo.description}}</small> -->
       </div>
     </div>
 

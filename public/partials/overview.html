@@ -3,32 +3,27 @@
   <div class="right">
     <div class="text">
       <div class="textBlock">
-        <h1>Concept and Overview</h1>
-
+        <h1>{{view.textBlock1h1}}</h1>
       </div>
-
       <div class="textBlock">
-        <h3>Sonification and Visualization</h3>
-
-      </div>
-
-      <div class="textBlock">
-        <h3>Potential Sources of Data Inputs</h3>
-        <ul>
-          <li>Twitter Sentiment Analysis</li>
-          <li>Refugee Movements</li>
-          <li>Arms Sales</li>
-        </ul>
-            </div>
-      <div class="textBlock">
-        <h3>Potential Sources of User Inputs</h3>
-        <ul>
-          <li>Mouse movements</li>
-          <li>Browser attributes</li>
-          <li>Biometrics</li>
+        <h3>{{view.textBlock2h3}}</h3>
+        <ul ng-repeat="element in view.textBlock2p">
+          <li>{{element}}</li>
         </ul>
       </div>
 
+      <div class="textBlock">
+        <h3>{{view.textBlock3h3}}</h3>
+        <ul ng-repeat="element in view.textBlock3p">
+          <li>{{element}}</li>
+        </ul>
+      </div>
 
+      <div class="textBlock">
+        <h3>{{view.textBlock4h3}}</h3>
+        <ul ng-repeat="element in view.textBlock4p">
+          <li>{{element}}</li>
+        </ul>
+      </div>
   </div>
 </div>
