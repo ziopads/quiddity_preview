@@ -34,7 +34,6 @@
             console.log(data.headers('link'));
             $scope.view.gitData = data.data;
           })
-
         });
       }
     }

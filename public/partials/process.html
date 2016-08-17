@@ -13,7 +13,6 @@
         <ul ng-repeat="repo in view.gitData | orderBy: 'created_at':  true">
           <li><a href="{{repo.html_url}}" target="_blank" >{{repo.name}}</a><br><small>{{repo.description}}</small></li>
         </ul>
-
       </div>
     </div>
 
