@@ -29,11 +29,7 @@
       gitData: function(){
         $http.get("https://api.github.com/users/ziopads/repos")
         .then(function(data) {
-          $http.get(data.headers('link'))
-          .then(function(data){
-            console.log(data.headers('link'));
-            $scope.view.gitData = data.data;
-          })
+          $scope.view.gitData = data.data;
         });
       }
     }
