@@ -1,3 +1,3 @@
-angular.module('preview').directive("navbar", () => ({
+angular.module('interferon').directive("navbar", function(){
   templateUrl: "partials/navbar.html"
-}));
+});

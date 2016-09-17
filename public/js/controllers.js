@@ -48,8 +48,8 @@
     };
   }
 
-  angular.module('preview').controller('HomeController', HomeController);
-  angular.module('preview').controller('OverviewController', OverviewController);
-  angular.module('preview').controller('ProcessController', ProcessController);
-  angular.module('preview').controller('DesignController', DesignController);
+  angular.module('interferon').controller('HomeController', HomeController);
+  angular.module('interferon').controller('OverviewController', OverviewController);
+  angular.module('interferon').controller('ProcessController', ProcessController);
+  angular.module('interferon').controller('DesignController', DesignController);
 }());

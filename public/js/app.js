@@ -1,5 +1,5 @@
 (function(){
-  angular.module('preview', ['ngRoute'])
+  angular.module('interferon', ['ngRoute'])
 
   function routes($routeProvider){
     $routeProvider
@@ -23,6 +23,6 @@
       .otherwise({redirectTo: '/'})
   };
 
-  angular.module('preview').config(routes);
+  angular.module('interferon').config(routes);
 
 }());
